@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aadi Ratra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#15171A;
+    --card:#1C1F23;
+    --ink:#E6E7E8;
+    --muted:#9099A0;
+    --line:#2A2E33;
+    --accent:#6FB3C9;
+    --maxw:760px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'IBM Plex Sans',sans-serif;
+    font-size:16px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  nav{border-bottom:1px solid var(--line)}
+  .nav-inner{
+    max-width:var(--maxw);margin:0 auto;padding:18px 24px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+  }
+  .nav-name{font-weight:600;color:var(--ink)}
+  .nav-links{display:flex;gap:20px}
+  .nav-links a{font-size:14px;color:var(--muted);text-decoration:none}
+  .nav-links a:hover{color:var(--ink)}
+
+  header{padding:64px 0 48px}
+  header .role{
+    font-family:'IBM Plex Mono',monospace;font-size:13px;
+    color:var(--accent);margin-bottom:14px;
+  }
+  h1{font-size:2rem;font-weight:600;letter-spacing:-.01em;margin-bottom:14px}
+  header p{color:var(--muted);max-width:58ch}
+
+  section{padding:40px 0;border-top:1px solid var(--line)}
+  h2{
+    font-family:'IBM Plex Mono',monospace;font-size:14px;
+    color:var(--muted);text-transform:uppercase;letter-spacing:.08em;
+    margin-bottom:22px;
+  }
+  section p{color:var(--muted);margin-bottom:14px}
+  section p:last-child{margin-bottom:0}
+
+  .edu{margin-top:18px;color:var(--muted);font-size:15px}
+  .edu strong{color:var(--ink);display:block;font-weight:600}
+
+  .skills{font-size:15px;color:var(--muted)}
+  .skills div{margin-bottom:12px}
+  .skills div:last-child{margin-bottom:0}
+  .skills b{color:var(--ink);font-weight:600;font-family:'IBM Plex Mono',monospace;font-size:13px}
+
+  .job{margin-bottom:30px}
+  .job:last-child{margin-bottom:0}
+  .job-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;align-items:baseline}
+  .job-head h3{font-size:1.05rem;font-weight:600}
+  .job-head .when{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--muted)}
+  .job .co{color:var(--accent);font-size:14px;margin:2px 0 12px}
+  .job ul{list-style:none}
+  .job li{color:var(--muted);font-size:15px;margin-bottom:8px;padding-left:18px;position:relative}
+  .job li::before{content:"-";position:absolute;left:0;color:var(--accent)}
+
+  .proj{border:1px solid var(--line);background:var(--card);border-radius:6px;padding:22px;margin-bottom:16px}
+  .proj:last-child{margin-bottom:0}
+  .proj-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;align-items:baseline}
+  .proj h3{font-size:1.02rem;font-weight:600}
+  .proj .when{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted)}
+  .proj p{color:var(--muted);font-size:14.5px;margin:10px 0 0}
+  .proj .stack{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--accent);margin-top:10px}
+
+  .contact a{margin-right:18px;font-size:15px;display:inline-block;margin-bottom:6px}
+
+  footer{padding:30px 0;border-top:1px solid var(--line)}
+  footer p{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-name">Aadi Ratra</span>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#work">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="role">Computer Science Student / Full Stack Developer</div>
+    <h1>Hi, I'm Aadi.</h1>
+    <p>I'm a CS student at the University of New Brunswick who likes building things across the full stack and digging into data. This is a small site to collect what I've worked on.</p>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>I'm studying Computer Science with a minor in Mathematics. I enjoy working on web apps end to end, from the React front end to the deployment side, and I spend a fair amount of time on data projects in Power BI and Spark.</p>
+    <p>Outside of coursework I help run campus events and coordinate small teams, which has taught me a lot about planning and getting things done with other people.</p>
+    <div class="edu">
+      <strong>University of New Brunswick, Fredericton, NB</strong>
+      Bachelor of Computer Science, Minor in Mathematics
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><b>Languages</b><br>Python, C, Java, JavaScript, HTML5, CSS, React, Apache POI, SQL</div>
+      <div><b>Analytics</b><br>Power BI, DAX, PySpark, Spark SQL, Microsoft Excel</div>
+      <div><b>Tools</b><br>GitHub, Docker, Kubernetes, Microsoft 365, Eclipse, VS Code, JUnit, JavaFX</div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <h3>Full Stack Developer</h3>
+        <span class="when">Feb 2026 to Present</span>
+      </div>
+      <div class="co">AnyDay Inc.</div>
+      <ul>
+        <li>Working on a real time AI chat interface with SSE streaming and React 19, building 8+ interactive components rendered inline from structured AI responses, which cut average user interaction time by about 20%.</li>
+        <li>Built an in chat booking flow with the Stripe Payment Element, PCI compliant card processing, and structured passenger forms so transactions happen inside the AI agent.</li>
+        <li>Set up a CI/CD pipeline with GitHub Actions, Docker multi stage builds, and Kubernetes manifests, which reduced deployment time by around 30% while keeping 99.9% uptime.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <h3>Student Assistant</h3>
+        <span class="when">Jul 2024 to Present</span>
+      </div>
+      <div class="co">Student Union Building, UNB</div>
+      <ul>
+        <li>Help organize and run over 25 campus events per semester, using simple data driven tweaks that improved student engagement by about 15%.</li>
+        <li>Set up digital tracking tools and kept logs for roughly 5,000 student interactions so the team could see participation trends.</li>
+        <li>Worked with student leaders from different backgrounds to make events run more smoothly.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <h3>Tech Support</h3>
+        <span class="when">Apr 2023 to Sep 2023</span>
+      </div>
+      <div class="co">BnB Tech Solutions</div>
+      <ul>
+        <li>Helped diagnose and troubleshoot hardware and software issues to improve reliability.</li>
+        <li>Used Java, HTML, and CSS in supervised mini projects to get hands on front end practice.</li>
+        <li>Worked with teammates to resolve support requests and practiced communicating clearly.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+
+    <div class="proj">
+      <div class="proj-head">
+        <h3>BMW Global Sales Analysis</h3>
+        <span class="when">Jun 2025 to Aug 2025</span>
+      </div>
+      <p>An interactive Power BI dashboard over 50,000 sales records by region, year, and model series. I cleaned the data in SQL and used DAX (CALCULATE, FILTER, RANKX) for growth and ranking KPIs, which cut report generation time by an estimated 30 to 40%.</p>
+      <div class="stack">Power BI, SQL, DAX</div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <h3>Databricks Adidas Sales Analytics</h3>
+        <span class="when">Sep 2025 to Nov 2025</span>
+      </div>
+      <p>An end to end analytics pipeline in Databricks using PySpark on Adidas sales data from 2020 to 2021. I cleaned and transformed the raw data, then used Spark SQL to work out revenue, profit, pricing, and units sold, and found the top profit generating cities.</p>
+      <div class="stack">Databricks, PySpark, Spark SQL</div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <h3>Meta Front-End Developer Certificate</h3>
+        <span class="when">Jul 2024 to Feb 2025</span>
+      </div>
+      <p>Coursework building responsive front ends with React and JavaScript, integrating dynamic data sources, and applying UI/UX and data visualization basics.</p>
+      <div class="stack">React, JavaScript, Bootstrap</div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <h3>UNB Robotics Club, Team Director</h3>
+        <span class="when">Campus involvement</span>
+      </div>
+      <p>Organized a campus level robotics and analytics event by drafting proposals and coordinating with leadership, then led a 4 member team to handle logistics and engagement for 20+ participants.</p>
+      <div class="stack">Planning, Coordination, Operations</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>I'm looking for internships and junior roles in full stack or analytics. Feel free to reach out.</p>
+    <div class="contact">
+      <a href="mailto:aadi.ratra@unb.ca">aadi.ratra@unb.ca</a>
+      <a href="https://www.linkedin.com/in/aadiratra" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="tel:+14376791421">+1 (437) 679-1421</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><p>Built by Aadi Ratra, 2026</p></div>
+</footer>
+
+</body>
+</html>
